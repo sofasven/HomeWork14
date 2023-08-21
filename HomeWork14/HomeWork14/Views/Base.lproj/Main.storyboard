@@ -174,16 +174,25 @@
                                         <rect key="frame" x="0.0" y="84.333333333333314" width="343" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Go to VC with XIB and send data"/>
+                                        <connections>
+                                            <action selector="gotoThirdVC:" destination="h0v-h3-mHb" eventType="touchUpInside" id="aGY-2S-ofU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="us4-M9-GGX">
                                         <rect key="frame" x="0.0" y="148.66666666666669" width="343" height="54.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Go to VC by separated Storyboard and send data"/>
+                                        <connections>
+                                            <action selector="foToFourthWithoutSegue" destination="h0v-h3-mHb" eventType="touchUpInside" id="V6U-7q-rge"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgs-y0-eZv">
                                         <rect key="frame" x="0.0" y="233.00000000000003" width="343" height="54.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Go to VC by separated Storyboard with segue and send data"/>
+                                        <connections>
+                                            <segue destination="ywj-5Q-UhK" kind="show" identifier="goToFourthVC" id="lfA-Ya-bVl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -214,7 +223,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Iy-kA-tK6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-144" y="1363"/>
+            <point key="canvasLocation" x="-144" y="1510"/>
+        </scene>
+        <!--SecondStoryboard-->
+        <scene sceneID="TRp-Rk-Aes">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SecondStoryboard" id="ywj-5Q-UhK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qBe-xG-Plw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AP1-3D-Zmg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="495" y="1801"/>
         </scene>
         <!--SecondVC-->
         <scene sceneID="Nyw-IN-s9D">
@@ -258,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dEn-uT-9F1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="645" y="1363"/>
+            <point key="canvasLocation" x="671" y="1312"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="32O-QZ-PwV">
@@ -276,7 +295,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N6L-fD-reC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-947" y="1363"/>
+            <point key="canvasLocation" x="-947" y="1510"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
